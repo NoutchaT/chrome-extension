@@ -4,7 +4,7 @@ async function getProfileInfo(): Promise<Profile> {
   const fullName = document.querySelectorAll(".pv-top-card--list li")[0];
   const title = document.querySelectorAll(".pv-top-card h2.mt1")[0];
   const country = document.querySelectorAll(".pv-top-card--list-bullet li")[0];
-  const image = document.querySelectorAll(".profile-photo-edit img")[0];
+  const image = document.querySelectorAll(".pv-top-card--photo img")[0];
 
   const response: Profile = {
     fullName: fullName.textContent.replace(/\n/, "").trim(),
